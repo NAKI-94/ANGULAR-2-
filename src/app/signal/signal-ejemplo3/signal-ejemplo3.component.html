@@ -1,0 +1,10 @@
+<h2> Ejemplo - Actualizando un nombre usando el input </h2>
+
+<div>
+<mat-form-field>
+<mat-label> Ingrese su nombre</mat-label>
+<input matInput #myName (input)="updateName(myName.value)">
+</mat-form-field>
+
+Mi nombre es: {{ nombre() }}
+</div>
