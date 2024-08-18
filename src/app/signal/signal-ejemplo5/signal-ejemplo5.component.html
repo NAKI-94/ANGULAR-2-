@@ -1,0 +1,17 @@
+<h2> EJEMPLO 5TODO LIST CON SEÑALES ESCRIBIBLES</h2>
+
+<mat-form-field>
+    <mat-label>NOMBRE DE LA TAREA</mat-label>
+    <input matInput name="todo" #todo/>
+</mat-form-field>
+
+
+<button mat-raised-button color="primary" (click)="addTodo(todo)">
+    AGREGAR
+</button>
+
+<ul>
+    @for (item of todos(); track item) {
+        <li>{{item}}</li>
+    }
+</ul>

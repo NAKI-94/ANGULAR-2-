@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './signal-ejemplo2.component.html',
   styleUrl: './signal-ejemplo2.component.scss'
 })
-export class SignalEjemplo2Component {
+export default class SignalEjemplo2Component {
 
 }
